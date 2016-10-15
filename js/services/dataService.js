@@ -1,6 +1,9 @@
 angular.module('devMtn').service('dataService',
 function() {
 
+
+  this.mainProfile = []
+
   this.friendsList = [{
         name: 'Mark Ferris',
         tagline: 'I am awesome!',
@@ -19,18 +22,29 @@ function() {
         image: "https://i.ytimg.com/vi/gxmHOwWh-i4/maxresdefault.jpg",
         desc: 'I am a very laid back dude who likes to camp.',
         id: 3
+      },{
+          name: 'Harambe',
+          tagline: 'I just wanted to play!',
+          image: "http://i2.mirror.co.uk/incoming/article8075004.ece/ALTERNATES/s615b/Harambe.jpg",
+          desc: 'I am a very laid back dude who likes to camp.',
+          id: 3
     }]
 
 
-  this.addUser = function(newUser) {
-    if(newUser.name && newUser.tagline && newUser.image && newUser.desc) {
-      this.friendsList.push(newUser);
-      return true;
-    }
-    return false;
+  this.addProfile = function(profile) {
+      this.mainProfile.push(profile);
+      console.log(this.mainProfile);
 
     }
 
+  this.getLoggedinUserProfile = function () {
+    for (var i = 0; i < this.mainProfile.length; i++) {
+      if(this.mainProfile[i].isLoggedInUser) {
+        return this.mainProfile[i];
+      }
+    }
+    return null;
+  }
 
 
 

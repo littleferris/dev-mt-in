@@ -9,7 +9,7 @@ header {
 }
 
 .main {
-  height: 45em;
+  height: 40em;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -17,17 +17,19 @@ header {
 
 .input-boxes {
   display: inline-block;
-  margin-top: 5%;
-  width: 50%
+  padding-top: 20%;
+  padding-bottom: 30%;
+  width: 50%;
+
 }
 
 .input {
-  margin-top: 2px;
-  width:
+
+  width: 100%;
 }
 
 .inputs {
-  width: 50%;
+  width: 80%;
 
 }
 
@@ -39,6 +41,11 @@ height: 50px;
   width: 35%;
 }
 
+.triangles {
+  margin: 0 auto;
+  padding: 5% 0 15% 0;
+
+}
 
 .triangles img {
   width: 376px;
@@ -57,4 +64,37 @@ footer {
   margin: 0 10px;
 
 
+}
+
+
+.user-name {
+  font-family: "Lora", serif;
+  font-size: 38.4px;
+  line-height: 46px;
+  color: #272727;
+}
+
+.user-tagline {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10.2px;
+  line-height: 14px;
+  font-weight:  bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #000000;
+}
+
+.user-bio {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10.2px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.profile-image {
+  display: block;
+  max-width:190px;
+  max-height:190px;
+  width: auto;
+  height: auto;
 }

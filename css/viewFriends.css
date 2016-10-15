@@ -1,8 +1,10 @@
 .friendsView {
-  height: 45em;
+  height: 40em;
 
   text-align: center;
   display: flex;
+ 
+
 
 }
 
@@ -12,7 +14,18 @@ img {
 }
 
 .friendsViewer {
-border: solid black 2px;
 
+  border: solid black 2px;
+  flex-wrap: wrap;
+
+
+}
+
+.friends {
+  width: 50px;
+}
+
+.friendImg {
+  width: 50%;
 
 }

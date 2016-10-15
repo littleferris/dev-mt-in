@@ -16,6 +16,11 @@ angular.module('devMtn', ['ui.router'])
           url: '/updateProfile',
           templateUrl: '../views/updateProfile.html',
           controller:'updateProfile'
+        })
+        .state('viewProfile', {
+          url: '/viewProfile',
+          templateUrl: '../views/viewProfile.html',
+          controller:'viewProfile'
         });
 
 
