@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="devMtn" lang="en">
 
 <head>
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DevMtin</title>
+
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/viewFriends.css">
+
+
 </head>
-
 <body>
+	<header>
+		<a ui-sref="home">DevMountain</a>
+		<hr>
+	</header>
 
-  
+
+
+		<ui-view></ui-view>
+
+
+
+	<footer>
+		<div class="bottomNav">
+			<hr>
+			<div class="footer-links">
+				<a ui-sref="viewFriends">View Friend</a>
+			</div>
+			<div class="footer-links">
+			<a href="">Find Friends</a>
+			</div>
+			<div class="footer-links">
+			<a ui-sref="updateProfile">Update Profile</a>
+		</div>
+		</div>
+
+	</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<!-- Custom Scripts -->
+<script src="./js/app.js"></script>
+<script src="./js/controllers/mainCtrl.js"></script>
+<script src="./js/controllers/viewFriendsCtrl.js"></script>
+<script src="./js/controllers/updateProfile.js"></script>
+
+
+<script src="./js/services/dataService.js"></script>
 </body>
 </html>

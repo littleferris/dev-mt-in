@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.main {
+  height: 45em;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+
+.input-boxes {
+  display: inline-block;
+  margin-top: 5%;
+  width: 50%
+}
+
+.input {
+  margin-top: 2px;
+  width:
+}
+
+.inputs {
+  width: 50%;
+
+}
+
+#bio-input {
+height: 50px;
+}
+
+.button {
+  width: 35%;
+}
+
+
+.triangles {
+  width: 50%;
+
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-links {
+  text-align: center;
+  display: inline;
+  margin: 0 10px;
+
+
+}
